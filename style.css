@@ -65,6 +65,69 @@ header {
   background-color: #32cd32;
 }
 
+.burger-menu {
+  display: none; /* Скрыто по умолчанию */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.burger-bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Скрыть меню по умолчанию на мобильных */
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Показать меню при активном классе */
+  }
+
+  .burger-menu {
+    display: flex; /* Показывать бургер-меню на мобильных */
+  }
+
+  .burger-bar:nth-child(1) {
+    transform-origin: top left;
+  }
+
+  .burger-bar:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .burger-bar:nth-child(3) {
+    transform-origin: bottom left;
+  }
+
+  .burger-menu.active .burger-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger-menu.active .burger-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active .burger-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
 /* Стили для поисковой строки */
 .search-container {
   display: flex;
