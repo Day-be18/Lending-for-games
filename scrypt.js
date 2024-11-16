@@ -1,3 +1,9 @@
+// Создаем бургер меню
+document.getElementById('burgerMenuButton').addEventListener('click', function() {
+  const navMenu = document.querySelector('.nav-menu');
+  navMenu.classList.toggle('active');
+});
+
 // Получаем элементы
 const searchInput = document.getElementById("searchInput");
 const gameCards = document.querySelectorAll(".game-card");
