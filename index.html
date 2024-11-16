@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лендинг по играм - OnlyForFriends</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/img/Favicon.png" type="image/png" loading="lazy" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">OnlyForFriends</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="/contacts.html">Контакты</a></li>
+          <li><a href="#">Все игры</a></li>
+          <li><a href="#">Категории</a></li>
+          <li><a href="#">Топ-100</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Поисковая строка под меню -->
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Введите название игры"
+      />
+      <button class="search-button" onclick="filterGames()">Поиск</button>
+    </div>
+
+    <div class="container">
+      <section class="games">
+        <div class="game-card" data-title="Grand Theft Auto V">
+          <img
+            src="/img/Grand Theft Auto V.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Grand Theft Auto V</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Криминальный экшен в открытом мире с тремя уникальными персонажами,
+            огромным количеством миссий и свободой действий.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Black Myth: Wukong">
+          <img
+            src="/img/Black Myth: Wukong.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Black Myth: Wukong</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен-RPG, вдохновленная китайской мифологией, где игрок управляет
+            Царём Обезьян в путешествии против могущественных врагов.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Senua’s Saga: Hellblade II">
+          <img
+            src="/img/Senua’s Saga: Hellblade II.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Senua’s Saga: Hellblade II</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Психологический экшен о воительнице Сенуа, которая сталкивается с
+            внутренними демонами и мифическими врагами в северной мифологии.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div
+          class="game-card"
+          data-title="S.T.A.L.K.E.R. 2: Heart of Chornobyl"
+        >
+          <img
+            src="/img/S.T.A.L.K.E.R. 2: Heart of Chornobyl.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>S.T.A.L.K.E.R. 2: Heart of Chornobyl</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Постапокалиптический шутер, где игрок исследует радиоактивную Зону
+            отчуждения, полную мутантов и аномалий.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Genshin Impact">
+          <img
+            src="/img/Genshin Impact.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Genshin Impact</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Многопользовательская RPG с открытым миром и аниме-стилистикой, где
+            игроки исследуют мир Тейват и сражаются с врагами.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Baldur’s Gate 3">
+          <img
+            src="/img/Baldur's Gate 3.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Baldur's Gate 3</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Ролевая игра, основанная на правилах D&D, где игроки создают
+            персонажей, участвуют в битвах и делают важные выборы.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Cyberpunk 2077">
+          <img
+            src="/img/Cyberpunk 2077.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Cyberpunk 2077</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Киберпанк-RPG, где игрок в роли наемника исследует футуристический
+            город и взаимодействует с его уникальными жителями.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Red Dead Redemption 2">
+          <img
+            src="/img/Red Dead Redemption 2.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Red Dead Redemption 2</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Приключенческая игра о жизни бандита на Диком Западе, с открытым
+            миром и глубоким повествованием.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Elden Ring">
+          <img
+            src="/img/Elden Ring.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Elden Ring</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Фэнтезийная экшен-RPG с открытым миром, созданная в сотрудничестве с
+            Джорджем Мартином, с сильными элементами исследования и боя.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="The Witcher 3: Wild Hunt">
+          <img
+            src="/img/The Witcher 3: Wild Hunt.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>The Witcher 3: Wild Hunt</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            RPG, где игрок управляет ведьмаком Геральтом, охотится на чудовищ и
+            принимает сложные моральные решения.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Minecraft">
+          <img
+            src="/img/Minecraft.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Minecraft</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Песочница, где игроки могут строить и разрушать блоки, исследовать и
+            выживать в процедурно-генерируемом мире.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="The Elder Scrolls V: Skyrim">
+          <img
+            src="/img/The Elder Scrolls V: Skyrim.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>The Elder Scrolls V: Skyrim</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            RPG, где игрок исследует огромный фэнтезийный мир, выполняет квесты
+            и изучает магические силы.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="God of War: Ragnarok">
+          <img
+            src="/img/God of War: Ragnarok.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>God of War: Ragnarok</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен, где Кратос и его сын Атрей сражаются с мифическими существами
+            в скандинавской мифологии.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Metro Exodus">
+          <img
+            src="/img/Metro Exodus.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Metro Exodus</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Шутер от первого лица, где игрок сражается с мутантами и выживает в
+            постапокалиптической России.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Mount & Blade 2: Bannerlord">
+          <img
+            src="/img/Mount & Blade 2: Bannerlord.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Mount & Blade 2: Bannerlord</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Средневековая RPG с элементами стратегии, где игрок участвует в
+            осадах и управляет войском.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Atomic Heart">
+          <img
+            src="/img/Atomic Heart.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Atomic Heart</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен-шутер, основанный на альтернативной версии СССР с роботами и
+            аномалиями.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+        <div class="game-card" data-title="Forza Horizon 5">
+          <img
+            src="/img/Forza Horizon 5.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Forza Horizon 5</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен-шутер, основанный на альтернативной версии СССР с роботами и
+            аномалиями.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Far Cry 6">
+          <img
+            src="/img/Far Cry 6.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Far Cry 6</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен в открытом мире, где игрок борется с диктаторским режимом в
+            вымышленной стране Яра.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Dragon Age: The Veilguard">
+          <img
+            src="/img/Dragon Age: The Veilguard.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Dragon Age: The Veilguard</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Ещё не выпущенная игра во вселенной Dragon Age, в которой игроки
+            сталкиваются с угрозой Разрыва.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Hogwarts Legacy">
+          <img
+            src="/img/Hogwarts Legacy.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Hogwarts Legacy</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            RPG во вселенной Гарри Поттера, где игрок изучает магию и исследует
+            Хогвартс.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Silent Hill 2">
+          <img
+            src="/img/Silent Hill 2.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Silent Hill 2</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Психологический хоррор, где главный герой исследует зловещий город,
+            пытаясь найти жену.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Star Wars Jedi: Survivor">
+          <img
+            src="/img/Star Wars Jedi: Survivor.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Star Wars Jedi: Survivor</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Приключенческая игра о молодом джедае, сражающемся с Империей после
+            Приказа 66.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Dying Light 2 Stay Human">
+          <img
+            src="/img/Dying Light 2 Stay Human.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Dying Light 2 Stay Human</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен-RPG в открытом мире, где игрок сражается с зомби и выживает в
+            постапокалиптическом мире.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Hearts of Iron 4">
+          <img
+            src="/img/Hearts of Iron 4.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Hearts of Iron 4</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Глобальная стратегия о Второй мировой войне, где игрок управляет
+            государствами, ведет войны и укрепляет экономику.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Dishonored 2">
+          <img
+            src="/img/Dishonored 2.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Dishonored 2</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Стелс-экшен, где игрок выбирает, как проходить миссии, используя
+            магические способности.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Sea of Thieves">
+          <img
+            src="/img/Sea of Thieves.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Sea of Thieves</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Многопользовательская игра о пиратах, где игроки исследуют моря,
+            находят сокровища и сражаются.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Ghost of Tsushima">
+          <img
+            src="/img/Ghost of Tsushima.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Ghost of Tsushima</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен о самурае, защищающем Японию от монгольского вторжения, с
+            красивым открытым миром.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Doom Eternal">
+          <img
+            src="/img/Doom Eternal.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Doom Eternal</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Динамичный шутер, где игрок уничтожает демонов из ада с помощью
+            мощного оружия.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div
+          class="game-card"
+          data-title="Metal Gear Solid V: The Phantom Pain"
+        >
+          <img
+            src="/img/Metal Gear Solid V: The Phantom Pain.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Metal Gear Solid V: The Phantom Pain</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Стелс-экшен с открытым миром, где игрок управляет солдатом Биг
+            Боссом.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Death Stranding">
+          <img
+            src="/img/Death Stranding.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Death Stranding</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Необычная игра, где игрок курьером путешествует через
+            постапокалиптический мир, соединяя изолированные поселения.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="NieR: Automata">
+          <img
+            src="/img/NieR: Automata.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>NieR: Automata</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен-RPG с глубоким сюжетом о машинах и андроидах, сражающихся в
+            разрушенном будущем.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Cuphead">
+          <img
+            src="/img/Cuphead.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Cuphead</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Сложная платформенная игра с графикой, вдохновленной мультфильмами
+            1930-х годов, и захватывающими битвами с боссами.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Watch Dogs: Legion">
+          <img
+            src="/img/Watch Dogs: Legion.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Watch Dogs: Legion</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен в открытом мире, где игроки могут завербовать любого
+            персонажа, чтобы свергнуть режим.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Rocket League">
+          <img
+            src="/img/Rocket League.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Rocket League</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Спортивная игра, где игроки управляют машинами и играют в футбол с
+            гигантским мячом.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Rainbow Six Siege">
+          <img
+            src="/img/Rainbow Six Siege.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Rainbow Six Siege</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Тактический шутер, где команды сражаются в замкнутых пространствах,
+            используя разрушения и стратегию.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Devil May Cry 5">
+          <img
+            src="/img/Devil May Cry 5.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Devil May Cry 5</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен с яркими боями, где игрок управляет персонажами с различными
+            способностями для сражений с демонами.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Black Desert Online">
+          <img
+            src="/img/Black Desert Online.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Black Desert Online</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            MMORPG с упором на красивую графику, PvP-сражения и широкий выбор
+            классов персонажей.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Fallout 76">
+          <img
+            src="/img/Fallout 76.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Fallout 76</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Многопользовательская версия постапокалиптической серии Fallout с
+            элементами выживания и исследования.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Borderlands 3">
+          <img
+            src="/img/Borderlands 3.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Borderlands 3</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Шутер с мультяшной графикой и кооперативным режимом, где игроки
+            охотятся за сокровищами.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Mortal Kombat X">
+          <img
+            src="/img/Mortal Kombat X.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Mortal Kombat X</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Файтинг с жестокими и зрелищными боями, культовыми персонажами и
+            фирменными "фаталити".
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Valorant">
+          <img
+            src="/img/Valorant.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Valorant</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Тактический шутер с элементами магии и различными героями, каждый со
+            своими уникальными способностями.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Middle-earth: Shadow of War">
+          <img
+            src="/img/Middle-earth: Shadow of War.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Middle-earth: Shadow of War</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен-RPG, действие которой происходит в Средиземье, где игрок
+            управляет талисманом и сражается с орками.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Hitman 3">
+          <img
+            src="/img/Hitman 3.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Hitman 3</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Стелс-игра, где игрок управляет наемным убийцей и выполняет миссии
+            по ликвидации целей в разных странах.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Assassin’s Creed Valhalla">
+          <img
+            src="/img/Assassin’s Creed Valhalla.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Assassin’s Creed Valhalla</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен о викингах, где игрок исследует Англию и сражается с врагами в
+            поисках новых земель.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Resident Evil Village">
+          <img
+            src="/img/Resident Evil Village.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Resident Evil Village</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Хоррор-игра, где игрок сражается с монстрами и исследует зловещую
+            европейскую деревню.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Horizon Zero Dawn">
+          <img
+            src="/img/Horizon Zero Dawn.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Horizon Zero Dawn</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен в постапокалиптическом мире, где главный герой охотится на
+            механических существ.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Persona 5">
+          <img
+            src="/img/Persona 5.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Persona 5</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Японская RPG, где игрок ведет двойную жизнь ученика и борца с
+            тенями, погружаясь в психологические миры.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Control">
+          <img
+            src="/img/Control.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Control</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Экшен с элементами сверхъестественного, где игрок исследует
+            таинственное агентство и сталкивается с паранормальными явлениями.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Crysis 3 Remastered">
+          <img
+            src="/img/Crysis 3 Remastered.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Crysis 3 Remastered</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Шутер с улучшенной графикой, где игрок использует нанокостюм и
+            сражается с инопланетными врагами.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="The Outer Worlds">
+          <img
+            src="/img/The Outer Worlds.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>The Outer Worlds</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Научно-фантастическая RPG, где игрок исследует космическую колонию и
+            делает выборы, влияющие на мир.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="A Plague Tale: Innocence">
+          <img
+            src="/img/A Plague Tale: Innocence.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>A Plague Tale: Innocence</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Приключенческая игра о выживании во времена чумы, где брат и сестра
+            избегают опасностей.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+
+        <div class="game-card" data-title="Little Nightmares II">
+          <img
+            src="/img/Little Nightmares II.webp"
+            alt="Упс! Что-то пошло не так!"
+            loading="lazy"
+          />
+          <h3>Little Nightmares II</h3>
+          <div class="tags"></div>
+          <!-- Контейнер для тегов -->
+          <p>
+            Атмосферный хоррор-платформер, где игрок помогает детям избегать
+            опасностей в пугающем мире.
+          </p>
+          <a href="#" class="play-btn">Узнать больше</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modalImage" src="" alt="Product Image" class="modal-image" />
+        <h2 id="modalTitle" class="modal-title">Title</h2>
+        <p id="modalDescription">Description</p>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 OnlyForFriends. All rights reserved.</footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="scrypt.js"></script>
+  </body>
+</html>
